@@ -115,7 +115,7 @@ export default function Intro() {
                                 />
                                 <OutlineLink title={"Call Now !"} href={""}
                                     leftIcon={
-                                        <PhoneIcon className="size-6" />
+                                        <PhoneIcon className="size-4" fill="currentColor"  />
                                     }
                                     bgColor="bg-[#2d3847]"
                                     textColor="text-white"
