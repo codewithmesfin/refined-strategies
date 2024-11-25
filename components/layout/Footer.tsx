@@ -23,14 +23,14 @@ export default function Footer() {
                             </div>)
                         }
                     </div>
-                    <h1 className="text-sm text-center text-gray-600 p-3">Developed by: 
+                    {/* <h1 className="text-sm text-center text-gray-600 p-3">Developed by: 
                         <Link
                             className="text-gray-900 font-extrabold px-1"
                             href="https://mevinai.et"
                             target='_blank'
                         >Mevinai</Link>
                         - 2024
-                    </h1>
+                    </h1> */}
                 </div>
             </div>
         </footer>
