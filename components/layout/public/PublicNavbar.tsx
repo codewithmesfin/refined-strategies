@@ -16,7 +16,7 @@ export default function PublicNavbar() {
 
     return (
         <div className="fixed bg-white  inset-x-0 top-0 z-50">
-            <nav aria-label="Global" className="py-4 md:py-8 w-[90%] md:w-[90%] mx-auto flex justify-between items-center space-x-4">
+            <nav aria-label="Global" className="py-4 md:py-8 w-[90%] md:w-[85%] mx-auto flex justify-between items-center space-x-4">
                 <Brand />
                 <div className="flex lg:hidden">
                     <button

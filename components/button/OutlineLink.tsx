@@ -9,7 +9,9 @@ interface PROPS {
     href: string
     borderColor?: string,
     leftIcon?: any,
-    py?: string
+    py?: string,
+    rounded?: string,
+    px?: string,
 }
 
 export default function OutlineLink({
@@ -20,13 +22,15 @@ export default function OutlineLink({
     href,
     borderColor = 'border-gray-400',
     leftIcon,
-    py = "py-2"
+    py = "py-2",
+    px = "px-4 sm:px-6",
+    rounded = 'rounded-xl'
 }: PROPS) {
     return <Link
         href={href}
-        className={`${bgColor} ${borderColor} ${textColor} ${py} flex justify-center md:justify-evenly items-center space-x-2 rounded-xl border hover:border-green-500 hover:bg-green-500 hover:text-white px-3 sm:px-6`}
+        className={`${bgColor} ${borderColor} ${textColor} ${py} ${px} flex justify-center md:justify-evenly items-center space-x-2 ${rounded} border hover:border-green-500 hover:bg-green-500 hover:text-white`}
     >{leftIcon}
         <span>{title}</span>
-        {showNextIcon && <ArrowRightIcon path="right" className="h-4 w-4" strokeWidth={2} />}
+        {showNextIcon && <ArrowRightIcon path="right" className="size-6" strokeWidth={2} />}
     </Link>
 }

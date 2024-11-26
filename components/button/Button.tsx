@@ -3,7 +3,7 @@ import { ArrowRightIcon } from "@heroicons/react/24/outline";
 
 interface PROPS {
     title: string,
-    isLoading: boolean,
+    isLoading?: boolean,
     showNextIcon?: boolean,
     bgColor?: string,
     textColor?: string,
@@ -12,6 +12,7 @@ interface PROPS {
     leftIcon?: any
     py?: string
     px?: string
+    rounded?: string,
 }
 
 export default function Button({
@@ -24,12 +25,13 @@ export default function Button({
     leftIcon,
     onclick,
     py = "py-2.5",
-    px = "px-3 sm:px-6"
+    px = "px-3 sm:px-6",
+        rounded='rounded-xl'
 }: PROPS) {
     return <button
         disabled={disabled}
         onClick={onclick}
-        className={`${py} ${px} rounded-xl ${bgColor} ${textColor} flex justify-center items-center spaxe-x-3 hover:bg-green-600`}
+        className={`${py} ${px} ${rounded} ${bgColor} ${textColor} flex justify-center items-center spaxe-x-3 hover:bg-green-600`}
     >
         {leftIcon}
         <span className={`${textColor} px-3`}>{title}</span>

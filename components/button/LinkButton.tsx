@@ -10,7 +10,9 @@ interface PROPS {
     borderColor?: string,
     leftIcon?: any,
     py?: string,
-    openOnOtherTab?:boolean
+    px?: string,
+    openOnOtherTab?:boolean,
+    rounded?:string
 }
 
 export default function LinkButton({
@@ -22,15 +24,17 @@ export default function LinkButton({
     borderColor = 'border-[#c5a572]',
     leftIcon,
     py = "py-2",
-    openOnOtherTab=false
+    px = "px-4 sm:px-6",
+    openOnOtherTab=false,
+    rounded='rounded-xl'
 }: PROPS) {
     return <Link
         href={href}
         target={openOnOtherTab?'_blank':'_self'}
-        className={`${bgColor} ${borderColor} ${textColor} ${py} flex justify-center md:justify-evenly items-center space-x-2 rounded-xl border hover:border-green-500 hover:bg-green-500 hover:text-white px-4 sm:px-6`}
+        className={`${bgColor} ${borderColor} ${textColor} ${py} ${px} flex justify-center md:justify-evenly items-center space-x-2 ${rounded} border hover:border-green-500 hover:bg-green-500 hover:text-white `}
     >
         {leftIcon}
         <span>{title}</span>
-        {showNextIcon && <ArrowLongRightIcon path="right" className="h-4 w-4" strokeWidth={2} />}
+        {showNextIcon && <ArrowLongRightIcon path="right" className="size-6" strokeWidth={2} />}
     </Link>
 }

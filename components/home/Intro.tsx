@@ -23,7 +23,7 @@ export default function Intro() {
 
     return <>
         <div className="bg-white pt-32">
-            <div className="w-[90%] md:max-w-[90%] mx-auto md:py-16">
+            <div className="w-[90%] md:max-w-[85%] mx-auto md:py-16">
                 <section className="md:flex justify-between md:space-x-10 items-center">
                     <div className="w-full">
                         <h1 className="text-3xl md:text-7xl font-extrabold text-gray-800">
@@ -38,10 +38,10 @@ export default function Intro() {
                         </p>
                         <div className="py-3 md:mt-6">
                             <div className="flex items-center space-x-4">
-                                <LinkButton title={"Explore Our Services"} href={""}
+                                <LinkButton title={"Explore Our Services"} href={"/services"}
                                     py="py-3"
                                 />
-                                <LinkButton title={"Resources"} href={""}
+                                <LinkButton title={"Resources"} href={"/resources"}
                                     py="py-3"
                                 />
                             </div>
