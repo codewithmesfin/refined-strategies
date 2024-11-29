@@ -1,6 +1,7 @@
 import NAV_ITEMS from '@/data/navInterface'
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
+import Link from 'next/link'
 
 
 interface PROPS {
@@ -25,12 +26,12 @@ export default function Dropdown({ classValue, item }: PROPS) {
         <div className="py-1">
           {item.children &&
             item.children.map((link: NAV_ITEMS) => <MenuItem key={link.title}>
-              <a
-                href="#"
+              <Link
+                href={link.href}
                 className="block px-4 py-2 text-sm text-gray-700 data-[focus]:bg-gray-100 data-[focus]:text-gray-900 data-[focus]:outline-none"
               >
                 {link.title}
-              </a>
+              </Link>
             </MenuItem>)
 
           }
