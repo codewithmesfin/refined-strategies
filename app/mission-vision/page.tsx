@@ -11,14 +11,14 @@ export default function MissionVision() {
             <section>
                 <div className="md:flex justify-between items-center md:space-x-10">
                     <div className="w-full md:w-1/2">
-                        <div className="py-4">
+                        <div className="py-4 md:my-6">
                             <h1 className="text-[#1b365d] text-2xl md:text-5xl font-bold">Our Mission</h1>
                             <p className="py-4 text-[#1b365d] text-lg md:text-xl">
                                 Enhance private sector performance by transforming decision-making
                                 through data-driven methodologies, leveraging passionate experts and cutting-edge technology.
                             </p>
                         </div>
-                        <div className="py-4">
+                        <div className="py-4 md:my-6">
                             <h1 className="text-[#1b365d] text-2xl md:text-5xl font-bold">Our Vision</h1>
                             <p className="py-4 text-[#1b365d] text-lg md:text-xl">
                                 To be a trusted catalyst for data-driven business excellence,
