@@ -67,7 +67,7 @@ export default function OurPeople() {
         <div className="bg-[#f2f5f9]">
             <div className="py-16 w-[90%] md:max-w-[85%] mx-auto">
                 <h1 className="py-2 text-4xl md:text-5xl font-bold text-center text-[#2d3847]">
-                    Let's Explore Solutions Together
+                    {"Let's"} Explore Solutions Together
                 </h1>
                 <p className="text-[#2d3847] md:text-lg text-center py-2">
                     Our senior consultants are here to understand your situation and explore how we might help.
