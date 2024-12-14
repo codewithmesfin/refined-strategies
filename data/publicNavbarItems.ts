@@ -22,7 +22,7 @@ const publicNavitems: Array<NAV_ITEMS> = [
     },
     {
         title: "Start Learning",
-        href: "/start-learning"
+        href: "https://i-learn.et"
     },
     {
         title: "Get in touch",
