@@ -1,48 +1,12 @@
 import { LinkButton, OutlineLink } from "@/components";
+import services from "@/data/services";
 import { ArrowLongRightIcon, ShareIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Link from "next/link";
 
 
 export default function Services() {
-    const services = [
-        {
-            icon: "/icons/2.png",
-            title: "Strategy & Innovation",
-            subtitle: "Future-proof your business with forward-thinking strategies and innovation frameworks.",
-            href: "/strategy-innovation"
-        },
-        {
-            icon: "/icons/1.png",
-            title: "Financial Advisory",
-            subtitle: "Optimize financial performance and make informed investment decisions",
-            href: "/financial-advisory"
-        },
-        {
-            icon: "/icons/3.png",
-            title: "Organizational Design",
-            subtitle: "Build high-performing teams and effective organizational structures",
-            href: "/org-design"
-        },
-        {
-            icon: "/icons/4.png",
-            title: "Operational Excellence",
-            subtitle: "Optimize your operations and processes to enhance efficiency and drive sustainable growth.",
-            href: "op-excellence"
-        },
-        {
-            icon: "/icons/5.png",
-            title: "Digital Transformation",
-            subtitle: "Navigate digital disruption and leverage technology to create competitive advantages.",
-            href: "/digital-transformation"
-        },
-        {
-            icon: "/icons/6.png",
-            title: "Learning Programs",
-            subtitle: "Learn from industry veterans with proven track records.",
-            href: "/learning-programs"
-        }
-    ]
+   
     return <div className="bg-white pt-32">
         <div className="w-[90%] md:max-w-[85%] mx-auto md:py-16">
             <section>
@@ -70,10 +34,10 @@ export default function Services() {
                                 <p className="text-[#2d3847] text-lg md:text-xl">{item.subtitle} </p>
                             </div>
                             <div className="py-2">
-                                <Link href={item.href} className="text-[#2312e0] md:text-lg flex items-center space-x-2">
+                             {item.items&&   <Link href={`/services/${item.id}`} className="text-[#2312e0] md:text-lg flex items-center space-x-2">
                                     <span className="border-b border-[#2312e0]">Learn More</span>
                                     <ArrowLongRightIcon className="size-6" />
-                                </Link>
+                                </Link>}
                             </div>
                         </div>)
                     }

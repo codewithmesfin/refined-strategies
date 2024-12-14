@@ -1,7 +1,7 @@
 import { LinkButton, OutlineLink } from "@/components";
-import { ArrowLongRightIcon, PhoneIcon, ShareIcon } from "@heroicons/react/24/outline";
+import { PhoneIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
-import Link from "next/link";
+
 
 
 export default function MissionVision() {

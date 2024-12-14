@@ -4,7 +4,7 @@ import NAV_ITEMS from "./navInterface"
 const publicNavitems: Array<NAV_ITEMS> = [
     {
         title: "About",
-        href: "/about",
+        href: "/mission-vision",
         children: [
             {
                 title: "Mission & Vision",
@@ -14,7 +14,7 @@ const publicNavitems: Array<NAV_ITEMS> = [
                 title: "Our People",
                 href: "/our-people"
             }
-        ]
+        ],
     },
     {
         title: "Why us ?",
