@@ -26,9 +26,9 @@ export default function Footer() {
                     {/* <h1 className="text-sm text-center text-gray-600 p-3">Developed by: 
                         <Link
                             className="text-gray-900 font-extrabold px-1"
-                            href="https://mevinai.et"
+                            href="https://refinedstrategies.et"
                             target='_blank'
-                        >Mevinai</Link>
+                        >refinedstrategies</Link>
                         - 2024
                     </h1> */}
                 </div>

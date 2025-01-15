@@ -6,7 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: 'Mevinai - waiting list',
+  title: 'refinedstrategies - waiting list',
   description: 'Get a friendly tech mentors for you.',
 };
 
@@ -33,15 +33,15 @@ export default function NotFound() {
                   style={{ lineHeight: 1.2 }}
                   className="text-3xl md:text-6xl font-extrabold bg-gradient-to-r from-gray-900 to-gray-700 text-center text-transparent bg-clip-text"
                 >
-                  Ready to Revolutionize Your business? Join the Mevinai Waitlist Today!
+                  Ready to Revolutionize Your business? Join the refinedstrategies Waitlist Today!
                 </h1>
               </div>
               <div className="w-full md:w-[80%] mx-auto">
                 <h2 className="py-6 text-gray-600 text-center text-lg md:text-2xl">
-                  Discover an Array of Incredible Mevinai services and Be Prepared
+                  Discover an Array of Incredible refinedstrategies services and Be Prepared
                   for an Exciting Wave of New Resources on the Horizon. Sign up to
                   Our Waitlist to be notified when we launch so you {"don't"} miss out
-                  on stunning Mevinai Resources.
+                  on stunning refinedstrategies Resources.
                 </h2>
               </div>
               <div className="py-y flex justify-center">

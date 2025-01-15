@@ -48,7 +48,7 @@ const values = [
 const socials = [
     {
         title: "Linkedin",
-        href: "https://www.linkedin.com/company/mevinai",
+        href: "https://www.linkedin.com/company/refinedstrategies",
         icon: "https://cdn1.iconfinder.com/data/icons/logotypes/32/circle-linkedin-512.png"
     },
     {
@@ -58,17 +58,17 @@ const socials = [
     },
     {
         title: "Youtube",
-        href: "https://www.youtube.com/@mevinai21",
+        href: "https://www.youtube.com/@refinedstrategies21",
         icon: "https://cdn-icons-png.flaticon.com/256/2504/2504848.png"
     },
     {
         title: "Instagram",
-        href: "https://www.instagram.com/mevinai1/",
+        href: "https://www.instagram.com/refinedstrategies1/",
         icon: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png"
     },
     {
         title: "Github",
-        href: "https://github.com/mevinai",
+        href: "https://github.com/refinedstrategies",
         icon: "https://cdn-icons-png.flaticon.com/512/25/25231.png"
     },
     {
