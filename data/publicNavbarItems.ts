@@ -26,7 +26,7 @@ const publicNavitems: Array<NAV_ITEMS> = [
     },
     {
         title: "Get in touch",
-        href: "https://i-learn.et/contact"
+        href: "/contact"
     }
 ]
 
