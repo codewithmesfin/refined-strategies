@@ -32,6 +32,7 @@ export default function PublicNavbar() {
                         {
                             item.children ?
                                 <Dropdown item={item}
+                                    onClick={() => setMobileMenuOpen(false)}
                                     classValue={`font-medium text-sm/2.5 hover:text-blue-600 ${pathname == item.href ? 'text-blue-600' : 'text-gray-600'}`}
                                 />
                                 : <Link key={item.title} href={item.href}
@@ -61,15 +62,21 @@ export default function PublicNavbar() {
                     <div className="mt-6 flow-root">
                         <div className="-my-6 divide-y divide-gray-500/10">
                             <div className="space-y-2 py-6">
-                                {publicNavitems.map((item) => (
-                                    <a
-                                        key={item.title}
-                                        href={item.href}
-                                        className={`text-sm/2.5 block rounded-lg px-3 py-2 font-medium ${pathname == item.href ? 'text-blue-600' : 'text-gray-600'}`}
-                                    >
-                                        {item.title}
-                                    </a>
-                                ))}
+                                {publicNavitems.map((item) =>
+                                    item.children ?
+                                        <div key={item.title} className='w-full px-3'>
+                                            <Dropdown onClick={() => setMobileMenuOpen(false)} item={item}
+                                                classValue={`font-medium text-sm/2.5 hover:text-blue-600 ${pathname == item.href ? 'text-blue-600' : 'text-gray-600'}`}
+                                            />
+                                        </div> : (
+                                            <a
+                                                key={item.title}
+                                                href={item.href}
+                                                className={`text-sm/2.5 block rounded-lg px-3 py-2 font-medium ${pathname == item.href ? 'text-blue-600' : 'text-gray-600'}`}
+                                            >
+                                                {item.title}
+                                            </a>
+                                        ))}
                             </div>
                         </div>
                     </div>
