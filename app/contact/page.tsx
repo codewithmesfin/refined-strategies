@@ -73,7 +73,7 @@ export default function ContactPage() {
         <section className="bg-white">
             <div className="w-[90%] max-w-7xl mx-auto py-16" data-aos="fade-up" data-aos-duration="500">
                 <div className="w-full md:max-w-[600px] mx-auto">
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
                             <TextField
                                 label="Full Name"
