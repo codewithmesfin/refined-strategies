@@ -51,7 +51,7 @@ export default function ContactPage() {
     }
 
 
-    return <div className="py-24 md:py-32">
+    return <div className="py-24 md:py-32 w-[90%] md:max-x-7xl mx-auto">
         <section className="bg-white py-8 md:pt-16">
             <div className="w-full md:max-w-[600px] mx-auto">
                 <div className='mx-auto w-full md:max-w-3xl'>
