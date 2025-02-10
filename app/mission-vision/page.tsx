@@ -27,11 +27,11 @@ export default function MissionVision() {
                         </div>
                     </div>
                     <div className="w-full md:w-1/2">
-                        <div className="pt-4 grid grid-cols-2 gap-1">
+                        <div className="pt-4 grid grid-cols-2 gap-1 h-full">
                             <Image alt="vision" src={"/about/1.png"}
-                                width={500} height={500} className="h-wull w-full rounded-sm" />
+                                width={500} height={500} className="h-wull w-full md:min-h-[300px] md:max-h-[300px] object-cover rounded-sm" />
                             <Image alt="vision" src={"/about/2.png"}
-                                width={500} height={500} className="h-wull w-full rounded-sm" />
+                                width={500} height={500} className="h-wull w-full md:min-h-[300px] md:max-h-[300px] object-cover rounded-sm" />
                         </div>
                         <div className="pb-4 pt-1">
                             <Image alt="vision" src={"/about/3.png"}

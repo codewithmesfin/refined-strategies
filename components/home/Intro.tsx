@@ -24,7 +24,7 @@ export default function Intro() {
     return <>
         <div className="bg-white pt-32">
             <div className="w-[90%] md:max-w-[85%] mx-auto md:py-16">
-                <section className="md:flex justify-between md:space-x-10 items-center">
+                <section className="md:flex justify-between md:space-x-10 items-start">
                     <div className="w-full">
                         <h1 className="text-3xl md:text-7xl font-extrabold text-gray-800">
                             Strategic Advisory for the dynamic business environment
@@ -49,7 +49,7 @@ export default function Intro() {
                     </div>
                     <div className="w-full md:max-w-[500px] pt-10 md:pt-0">
                         <Image src={"/images/img1.png"} alt="img1" height={600} width={600}
-                            className="w-full h-full rounded-full object-contain" />
+                            className="w-full h-full md:max-h-[600px] rounded-br-[20px] object-cover" />
                     </div>
                 </section>
                 <section className="my-10 md:my-24">
