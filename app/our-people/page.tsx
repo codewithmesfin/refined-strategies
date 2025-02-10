@@ -1,8 +1,13 @@
+"use client"
+
+
 import { LinkButton, OutlineLink } from "@/components";
+import show from "@/lib/toast";
 import { ArrowLongRightIcon, PhoneIcon, ShareIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import Link from "next/link";
 
+import { RWebShare } from "react-web-share";
 
 export default function OurPeople() {
     const members = [
@@ -75,21 +80,25 @@ export default function OurPeople() {
                 <div className="py-5">
                     <div className="md:flex justify-center items-center md:space-x-6">
                         <div className="py-2">
-                            <LinkButton title={"Subscribe Now"} href={""}
+                            <LinkButton title={"Subscribe Now"} href={"/contact"}
                                 bgColor="bg-[#c5a572]" showNextIcon py="py-3"
                                 rounded="rounded-full" px="sm:px-10"
                             />
                         </div>
                         <div className="py-2">
-                            <OutlineLink title={"Suggest your frriend"} href={""}
-                                bgColor="bg-white" py="py-3"
-                                rounded="rounded-full" px="sm:px-10"
-                                borderColor="border-[#c5a572]"
-                                textColor="text-[#c5a572]"
-                                leftIcon={
-                                    <ShareIcon className="size-6" />
-                                }
-                            />
+                            <div className="flex items-center space-x-2 border border-[#c5a572] rounded-full text-[#c5a572] bg-white py-2.5 px-5">
+                                <ShareIcon className="size-6" />
+                                <RWebShare
+                                    data={{
+                                        text: "Web Share - GfG",
+                                        url: "http://localhost:3000",
+                                        title: "GfG",
+                                    }}
+                                    onClick={() => show.success("shared successfully!")}
+                                >
+                                    <button>Suggest your frriend</button>
+                                </RWebShare>
+                            </div>
                         </div>
                     </div>
                 </div>

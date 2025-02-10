@@ -63,10 +63,10 @@ export default function Whyus() {
                             Contact our team to explore how we can help you achieve your business objectives.
                         </p>
                         <div className="pt-10 flex justify-center space-x-4">
-                            <LinkButton title={"Get Started"} href={""}
+                            <LinkButton title={"Get Started"} href={"/contact"}
                                 bgColor="bg-white" textColor="text-black"
                             />
-                            <OutlineLink title={"Call Now !"} href={""}
+                            <OutlineLink title={"Call Now !"} href={"tel:+251 91 202 3828"}
                                 leftIcon={
                                     <PhoneIcon className="size-4" fill="currentColor" />
                                 }
