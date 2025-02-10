@@ -19,13 +19,11 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: 'refinedstrategies',
-  description: 'refinedstrategies is a small team of Experienced Software Engineers.',
-  keywords: 'refinedstrategies, frappe,erpnext, ethiopia, innovation',
+  title: 'refined strategies',
+  description: 'Strategic Advisory for the dynamic business environment',
+  keywords: 'refined, strategies',
   robots: 'index, follow',
 };
-
-
 export default function RootLayout({
   children,
 }: Readonly<{

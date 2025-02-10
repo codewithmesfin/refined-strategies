@@ -35,7 +35,7 @@ export default function MissionVision() {
                         </div> */}
                         <div className="pb-4 pt-1">
                             <Image alt="vision" src={"/about/1.jpeg"}
-                                width={500} height={500} className="h-wull w-full rounded-sm  md:min-h-[300px] md:max-h-[300px] " />
+                                width={500} height={500} className="h-wull w-full rounded-sm  md:min-h-[300px] md:max-h-[300px]" />
                         </div>
                         <div className="pb-4 pt-1">
                             <Image alt="vision" src={"/about/3.png"}

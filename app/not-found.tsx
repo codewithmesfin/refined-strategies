@@ -2,14 +2,14 @@
 
 import { ArrowLongRightIcon, CheckBadgeIcon } from "@heroicons/react/24/outline";
 import { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: 'refinedstrategies - waiting list',
-  description: 'Get a friendly tech mentors for you.',
+  title: 'refined strategies',
+  description: 'Strategic Advisory for the dynamic business environment',
+  keywords: 'refined, strategies',
+  robots: 'index, follow',
 };
-
 
 export default function NotFound() {
   return (
